@@ -5,6 +5,13 @@ const divisionHead = function(){
 	let workers=Random().discreteRangeIn(20,300);
 	let baseSalary=Random().discreteRangeIn(2,5)*50000;
 	function pay(){
-	return (managers*10000+workers*50)*Math.log(workers);
-}	
+	let temp = (managers*10000+workers*50)*Math.log(workers);
+	let yearlypay= baseSalary+ temp
+	let weeklypay = yearlypay/52
+	let dailypay = weeklypay/5
+	return [dailypay,weeklypay,yearlypay]
 }
+return{id,workers,baseSalary}
+}
+let haha = new divisionHead;
+console.log(haha.id)

@@ -13,5 +13,7 @@ const divisionHead = function(){
 }
 return{id,workers,baseSalary}
 }
+module.exports = divisionHead;
+
 let haha = new divisionHead;
 console.log(haha.id)

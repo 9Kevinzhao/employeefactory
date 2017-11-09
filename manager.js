@@ -22,6 +22,7 @@ function pay(){
 
 return{id,workers,baseSalary,}
 }
+module.exports = manager;
 
 
 let haha = new manager
